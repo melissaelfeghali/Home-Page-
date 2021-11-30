@@ -1,0 +1,440 @@
+@font-face {
+  font-family: Avenir Roman;
+  font-style: normal;
+  src: url("../fonts/AvenirLTStd-Book.otf");
+}
+
+@font-face {
+  font-family: "Avenir Roman Black";
+  font-style: normal;
+  src: url("../fonts/AvenirLTStd-Black.otf");
+}
+
+body {
+  background-color: black;
+  font-family: Avenir Roman;
+  color: white;
+}
+
+header {
+  text-align: center;
+}
+
+hr{
+  height: 10px; 
+  border-width: 0; 
+  background-color: #f2ff00
+}
+
+#logo {
+  width: 40%;
+  height: auto;
+}
+
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -10px;
+}
+
+#navbar a {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+#navbar a:hover {
+  background-color: #f2ff00;
+  color: black;
+}
+
+#navbar .active {
+  background-color: #f2ff00;
+  color: black;
+  font-family: "Avenir Roman Black";
+}
+
+#flex_container {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+#flex_container h1 {
+  font-family: "Avenir Roman Black";
+  font-size: 40px;
+  color: #f2ff00;
+  text-align: left;
+}
+
+#flex_container p {
+  font-size: 25px;
+  line-height: 40px;
+}
+
+video{
+  width: 100%;
+  border: none;
+  margin-top: 70px;
+}
+
+video:focus{
+  outline: solid #f2ff00 3px;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #f2ff00;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 30px;
+  justify-content: center;
+  border-radius: 4px;
+  border: solid #262626 2px;
+}
+
+#subscription {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+
+#subscription p {
+  color: #262626;
+  font-size: 25px;
+  font-family: "Avenir Roman Black";
+  margin-right: 10px;
+}
+
+#subscription form {
+  display: flex;
+  flex-direction: row;
+  border: #262626 solid 12px;
+  border-radius: 4px;
+  vertical-align: baseline;
+  margin-left: 10px;
+}
+
+#subscription input {
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#subscription button {
+  border: none;
+}
+
+#subscription button:hover{
+  background-color: #262626;
+}
+
+#subscription img {
+  height: 24px;
+}
+
+#social_media {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  width: 50%;
+}
+
+#social_media a {
+  margin: 10px;
+}
+
+#social_media a img {
+  width: 64px;
+  height: 64px;
+  border-radius: 20px;
+  background-color: white;
+  border: solid #262626 3px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px){
+  #navbar a{
+    font-size: 15px;
+    padding: 7px;
+  }
+
+  #flex_container {
+    margin: 20px;
+  }
+  
+  #flex_container h1 {
+    font-size: 15px;
+  }
+  
+  #flex_container p {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 5px 10px;
+  }
+
+  #subscription{
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #subscription p {
+    font-size: 10px;
+  }
+  
+  #subscription form {
+    border: #262626 solid 6px;
+    border-radius: 4px;
+  }
+  
+  #subscription input {
+    font-size: 10px;
+    padding: 5px;
+  }
+
+  #subscription img {
+    height: 12px;
+  }
+
+  #social_media {
+    justify-content: center;
+    flex-direction: column;
+  }
+ 
+  #social_media a {
+    margin: 0px;
+  }
+
+  #social_media a img {
+    width: 24px;
+    height: 24px;
+    border-radius: 10px;
+    border: solid #262626 2px;
+  }
+
+  hr{
+    height: 5px; 
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px){
+  #navbar a {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  hr {
+    height: 8px;
+  }
+  
+  #flex_container h1 {
+    font-size: 30px;
+  }
+  
+  #flex_container p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 10px 15px;
+  }
+
+  #subscription {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #subscription p {
+    font-size: 15px;
+  }
+
+  #subscription form {
+    border: #262626 solid 8px;
+    border-radius: 4px;
+  }
+
+  #subscription input {
+    font-size: 15px;
+    padding: 5px;
+  }
+
+  #subscription img {
+    height: 12px;
+  }
+
+  #social_media {
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  #social_media a {
+    margin: 20px;
+  }
+
+  #social_media a img {
+    width: 48px;
+    height: 48px;
+    border-radius: 20px;
+    border: solid #262626 2px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px){
+  #logo {
+    width: 70%;
+  }
+  
+  #navbar a {
+    padding: 20px;
+    font-size: 25px;
+  }
+  
+  hr{
+    height: 10px; 
+  }
+
+  #flex_container h1 {
+    font-size: 30px;
+  }
+  
+  #flex_container p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 30px;
+    justify-content: center;
+  }
+  
+  #subscription {
+    align-items: center;
+    width: 50%;
+  }
+  
+  #subscription p {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+  
+  #subscription form {
+    flex-direction: row;
+    border: #262626 solid 12px;
+    margin-left: 10px;
+  }
+  
+  #subscription input {
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  #subscription img {
+    height: 24px;
+  }
+  
+  #social_media {
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+  }
+  
+  #social_media a {
+    margin: 10px;
+  }
+  
+  #social_media a img {
+    width: 64px;
+    height: 64px;
+    border-radius: 25px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px){
+  #logo {
+    width: 70%;
+  }
+
+  footer {
+    padding: 10px 30px;
+  }
+  
+  #subscription {
+    flex-direction: row;
+    width: 60%;
+  }
+      
+  #subscription img {
+    height: 30px;
+  }
+  
+  #social_media a {
+    margin: 15px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #logo {
+    width: 70%;
+  }
+
+  #navbar a {
+    padding: 25px;
+    font-size: 50px;
+  }
+  
+  hr{
+    height: 20px; 
+  }
+
+  #flex_container h1 {
+    font-size: 60px;
+  }
+  
+  #flex_container p {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  footer {
+    padding: 20px 40px;
+  }
+  
+  #subscription p {
+    font-size: 30px;
+  }
+
+  #subscription input{
+    font-size: 20px;
+  }
+      
+  #subscription img {
+    height: 30px;
+  }
+  
+  #social_media a {
+    margin: 25px;
+  }
+  
+  #social_media a img {
+    width: 90px;
+    height: 90px;
+    border-radius: 30px;
+  }
+}
