@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/tuneTrip_trip_styles.css" />
+    <title>TUNETRIP</title>
+  </head>
+  <body>
+    <header>
+      <img
+        src="../media/title_TuneTrip_Logo.jpg"
+        id="logo"
+        alt="TuneTrip Logo"
+      />
+
+      <hr/>
+
+      <div id="navbar">
+        <a href="./homeTuneTrip.html">Home</a>
+        <a href="./tripTuneTrip.html" class="active">Trip</a>
+        <a href="./galleryTuneTrip.html">Gallery</a>
+        <a href="./contactTuneTrip.html">Contact Us</a>
+      </div>
+    </header>
+
+    <div id="track_container">
+      <h1>Weekly Track</h1>
+      <p style="margin-top: -5px">Use headphones for a better experience.</p>
+      <p id="instruction">Listen thoroughly...</p>
+      <audio controls>
+        <source src="../media/weekly_track.mp3" type="audio/mpeg" />
+        Your browser does not support this audio element.
+      </audio>
+
+      <div id="list_container">
+        <p>
+          What you are hearing is completely up to
+          <em style="color: #f2ff00">YOU</em>
+        </p>
+        <ul>
+          <li>Samurai bell!!</li>
+          <li>I hear water drops down a sink</li>
+          <li>Feels like an underground metro experience</li>
+          <li>Noisy sounds of a big truck passing by</li>
+          <li>Sounds like waves hitting the shore</li>
+          <li>Felt like I was in a church by the sea</li>
+          <li>The sounds give me a kitchen vibe</li>
+          <li>I hear a lot of echoes...</li>
+          <li>Is this a xylophone towards the end?</li>
+          <li>Jungle, rain forest or savannah sounds</li>
+        </ul>
+        <div id="user_answer">
+          <input
+            type="text"
+            name="answer"
+            placeholder="What are you hearing ?"
+            required
+          />
+          <button type="submit">
+            <img
+              src="../media/icons/icons8-triangle-arrow-24.png"
+              alt="Yellow Button"
+              width="auto"
+            />
+          </button>
+        </div>
+      </div>
+
+      <h1 style="margin-top: 80px">Weekly Trip</h1>
+      <p>Take a trip with us into last week's track:</p>
+      <video controls>
+        <source src="../media/weekly_trip_animation.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <br>
+      <p id="archive">
+        Want more? Check our
+        <a href="">Archives</a>
+        page for previous track visuals!
+      </p>
+    </div>
+
+    <footer>
+      <div id="subscription">
+        <p>Subscribe to our newsletter</p>
+        <form action="">
+          <input
+            type="email"
+            placeholder="Email address"
+            name="mail"
+            required
+          />
+          <button type="submit">
+            <img
+              src="../media/icons/fast-forward.png"
+              alt="Arrow Icon"
+              style="width: auto"
+            />
+          </button>
+        </form>
+      </div>
+      <div id="social_media">
+        <a href="https://www.instagram.com" target="_blank">
+          <img
+            src="../media/icons/64px_instagram_media_photo_photography_share_icon.png"
+            alt="Instagram"
+          />
+        </a>
+        <a href="https:www.pinterest.com" target="_blank">
+          <img
+            src="../media/icons/64px_media_photo_photography_pinterest_share_icon.png"
+            alt="Pinterest"
+          />
+        </a>
+        <a href="https:www.twitter.com" target="_blank">
+          <img
+            src="../media/icons/64px_connection_media_share_social_twitter_icon.png"
+            alt="Twitter"
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
