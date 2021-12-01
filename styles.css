@@ -52,6 +52,7 @@ a {
 a:hover {
   color: var(--secondary-color);
   text-decoration: underline;
+  transform: scale(1.3);
 }
 
 h2 {
@@ -94,11 +95,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   gap: 4rem;
-  max-width: 80rem;
   margin-top: 4rem;
-  text-align: center;
-  position: relative;
-  left: 2rem;
 }
 
 .about_section img {
@@ -109,7 +106,7 @@ nav ul {
 }
 
 .bio {
-  width: 35rem;
+  width: 38rem;
   padding: 1.5rem 2rem;
   border-radius: 5px;
   box-shadow: 0px 2px 10px 2px var(--primary-shadow);
@@ -117,9 +114,11 @@ nav ul {
 }
 
 .bio p {
-  line-height: 2rem;
+  line-height: 2.1rem;
   padding: 0.3rem;
-  
+  overflow:hidden;
+  overflow-y: scroll;
+  height: 16rem;
 }
 
 .social_media {
@@ -129,6 +128,7 @@ nav ul {
   right: 1%;
   bottom: 30%;
   gap: 0.5rem;
+  z-index: 2;
 }
 
 .media_icon {
@@ -209,8 +209,8 @@ nav ul {
 
 .flip-box-back h2 {
   border-radius: 50px;
-  font-size: 1rem;
-  padding: 5px 10px;
+  font-size: 0.8rem;
+  padding: 0.5rem 0.6rem;
   cursor: pointer;
   background-color: var(--primary-color);
   color: var(--background-color);
@@ -338,10 +338,46 @@ nav ul {
   cursor: pointer;
   width: 3rem;
   height: 3rem;
+  color: var(--primary-color);
+  z-index: 2;
+}
+
+.scroll_top:hover{
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 992px){
+  nav h1{
+    font-size: 1.4rem;
+  }
+
+  nav ul li{
+    font: 0.8rem;
+  }
+
+  .about_section{
+    flex-direction: column;
+  }
+
+  .bio{
+    width: 28rem;
+  }
+
+  .bio h2{
+    font-size: 1.8rem;
+  }
+
+  .bio p{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
   nav {
     padding: 1.5rem 1rem;
   }
@@ -356,6 +392,12 @@ nav ul {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  nav a{
+    color: var(--primary-color);
   }
 
   nav ul li {
@@ -369,4 +411,55 @@ nav ul {
   nav ul.show {
     transform: translateX(0);
   }
+
+  .bio{
+    width: 24rem;
+  }
+
+  .bio h2{
+    font-size: 1.5rem;
+  }
+
+  .bio p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .flex-item {
+    width: 24rem;
+  }
+  
+  .grid-container {
+    width: 23rem;
+  }
+
+  .grid-item {
+    width: 3rem;
+    height: 3rem;
+  } 
+
+  .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .flip-box-back h2 {
+    border-radius: 40px;
+    font-size: 0.5rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .swiper {
+    width: 98%;
+  }
+
+  .swiper-slide img {
+    width: 28rem;
+    height: 20rem;
+  }
+  
+  .projects {
+    flex-direction: column;
+  }
+  
 }
